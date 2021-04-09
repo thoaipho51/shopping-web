@@ -24,6 +24,12 @@ class ProductController extends Controller
 		$new_products = Product::where('new',1)->get();
 		return $new_products;
 	}
+    public function showProductByType($id){
+		$products = Product::where('id_type',$id)->get();
+		return view('product-by-type',array(
+            'products'=>$products
+        ));
+	}
 
     /**
      * Show the form for creating a new resource.

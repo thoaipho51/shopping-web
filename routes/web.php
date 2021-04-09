@@ -17,6 +17,7 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/', [ProductController::class,'index']);
+Route::get('/product/type/{id}', [ProductController::class,'showProductByType']);
 
 
 Route:: get('/404',[Mycontroller::class, 'err']);
