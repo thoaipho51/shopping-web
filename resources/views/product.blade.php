@@ -43,11 +43,11 @@
 							<div class="single-item-options">
 								<select class="wc-select" name="size">
 									<option>Size</option>
-									<option value="XS">XS</option>
+									
 									<option value="S">S</option>
 									<option value="M">M</option>
 									<option value="L">L</option>
-									<option value="XL">XL</option>
+									
 								</select>
 								<select class="wc-select" name="color">
 									<option>Color</option>

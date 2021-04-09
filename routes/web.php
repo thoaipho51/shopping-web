@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Mycontroller;
 
 
 
@@ -21,6 +22,7 @@ Route::get('/', [ProductController::class,'index']);
 Route::get('/product/type/{id}', [ProductController::class,'showProductByType']);
 
 Route::get('/product/{id}', [ProductController::class,'show']);
+
 
 
 Route:: get('/404',[Mycontroller::class, 'err']);

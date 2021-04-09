@@ -8,9 +8,9 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="beta-products-list">
-							<h4>New Products</h4>
+							<h4>Products</h4>
 							<div class="beta-products-details">
-								<p class="pull-left">438 styles found</p>
+								<p class="pull-left">{{count($products)}} product </p>
 								<div class="clearfix"></div>
 							</div>
 
@@ -19,7 +19,7 @@
 								<div class="col-sm-3">
 									<div class="single-item">
 										<div class="single-item-header">
-											<a href="http://127.0.0.1:8000/products"><img src="{{asset('image/product/' . $item->image)}}" alt="ảnh thùng pc"></a>
+											<a href="{{url('/product/' . $item->id)}}"><img src="{{asset('image/product/' . $item->image)}}" alt="ảnh thùng pc"></a>
 										</div>
 										<div class="single-item-body">
 											<p class="single-item-title">{{$item->name}}</p>

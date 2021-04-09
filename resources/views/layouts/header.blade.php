@@ -91,11 +91,15 @@
 				<nav class="main-menu">
 					<ul class="l-inline ov">
 						<li><a href="http://127.0.0.1:8000/">Trang chủ</a></li>
-						<li><a href="http://127.0.0.1:8000/products">Sản phẩm</a>
+						<li><a href="#">Sản phẩm</a>
 							<ul class="sub-menu">
-								<li><a href="http://127.0.0.1:8000/product_type">Sản phẩm 1</a></li>
-								<li><a href="http://127.0.0.1:8000/product_type">Sản phẩm 2</a></li>
-								<li><a href="http://127.0.0.1:8000/product_type">Sản phẩm 4</a></li>
+								<li><a href="{{url('/product/type/1')}}">Bánh mặn</a></li>
+								<li><a href="{{url('/product/type/2')}}">Bánh ngọt</a></li>
+								<li><a href="{{url('/product/type/3')}}">Bánh trái cây</a></li>
+								<li><a href="{{url('/product/type/4')}}">Bánh kem</a></li>
+								<li><a href="{{url('/product/type/5')}}">Bánh Crepe</a></li>
+								<li><a href="{{url('/product/type/6')}}">Bánh Pizza</a></li>
+								<li><a href="{{url('/product/type/7')}}">Bánh su kem</a></li>
 							</ul>
 						</li>
 						<li><a href="http://127.0.0.1:8000/about">Giới thiệu</a></li>
