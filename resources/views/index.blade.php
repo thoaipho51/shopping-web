@@ -62,7 +62,7 @@
 								<div class="col-sm-3">
 									<div class="single-item">
 										<div class="single-item-header">
-											<a href="{{url('/product/' . $item->id)}}"><img src="newpic/Products/test1.png" alt="ảnh thùng pc"></a>
+											<a href="{{url('/product/' . $item->id)}}"><img src="{{asset('image/product/' .$item->image)}}" alt="ảnh thùng pc"></a>
 										</div>
 										<div class="single-item-body">
 											<p class="single-item-title">{{$item->name}}</p>
