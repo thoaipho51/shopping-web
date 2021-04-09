@@ -50,6 +50,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
+        
     }
 
     /**
@@ -61,6 +62,11 @@ class ProductController extends Controller
     public function show($id)
     {
         //
+        $product = Product::find($id);
+
+		return view('product', array(
+			'product' => $product
+		));
     }
 
     /**
