@@ -8,7 +8,7 @@ class Mycontroller extends Controller
 {
     //views
     public function index() {
-        return view('index');
+        return view('layout_admin.layout');
     } 
 
     public function err() {

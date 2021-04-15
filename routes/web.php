@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Mycontroller;
+use App\Http\Controllers\AdminController;
 
 
 
@@ -24,6 +25,30 @@ Route::get('/product/type/{id}', [ProductController::class,'showProductByType'])
 Route::get('/product/{id}', [ProductController::class,'show']);
 
 
+Route::get('/admin',function(){
+    return view('admin.index');
+});
+
+Route::get('/admin/product',function(){
+    $products = AdminController::GetProducts();
+    return view('admin.product', array(
+        'products'=> $products
+    ));
+});
+
+Route::get('/admin/user',function(){
+    $users = AdminController::GetUsers();
+    return view('admin.user', array(
+        'users'=> $users
+    ));
+});
+
+Route::get('/admin/customer',function(){
+    $customers = AdminController::GetCustomers();
+    return view('admin.customer', array(
+        'customers'=> $customers
+    ));
+});
 
 Route:: get('/404',[Mycontroller::class, 'err']);
 

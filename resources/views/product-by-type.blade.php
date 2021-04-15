@@ -24,7 +24,7 @@
 										<div class="single-item-body">
 											<p class="single-item-title">{{$item->name}}</p>
 											<p class="single-item-price">
-												<span>{{$item->unit_price}}vnd</span>
+												<span>{{$item->unit_price}} vnd</span>
 											</p>
 										</div>
 										<div class="single-item-caption">
